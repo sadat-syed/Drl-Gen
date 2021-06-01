@@ -1,0 +1,23 @@
+{
+  "name" : "Numerator",
+  "resolved" : false,
+  "dependentObjects" : [ "Mammogram" ],
+  "valueSetList" : null,
+  "dataType" : null,
+  "constraintList" : [ {
+    "name" : "Numerator|428e0566-8cdd-434f-9c11-af4245eb5232",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Mammogram",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0,
+  "operator" : null,
+  "intervalOperator" : null,
+  "qdmPeriodVariable" : null,
+  "qdmFunctionVariable" : "endsBeforeOrConcurrentWithEnd"
+}

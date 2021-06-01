@@ -1,0 +1,14 @@
+{
+  "name" : "Patient",
+  "resolved" : false,
+  "dependentObjects" : [ ],
+  "valueSetList" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0,
+  "operator" : null,
+  "intervalOperator" : null,
+  "qdmPeriodVariable" : null,
+  "qdmFunctionVariable" : ""
+}

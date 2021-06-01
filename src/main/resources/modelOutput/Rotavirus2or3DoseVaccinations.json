@@ -1,0 +1,28 @@
+{
+  "name" : "Rotavirus2or3DoseVaccinations",
+  "resolved" : false,
+  "dependentObjects" : [ "Rotavirus2DoseVaccinationFollowedbyTwoRotavirus3DoseVaccinations", "Rotavirus3DoseVaccinationFollowedbyARotavirus2DoseVaccinationandARotavirus3DoseVaccination", "Rotavirus3DoseVaccinationsFollowedbyOneRotavirus2DoseVaccination" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ {
+    "name" : "Rotavirus2or3DoseVaccinations|395bdae7-292a-4830-881d-cb0cbce607a3",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Rotavirus2DoseVaccinationFollowedbyTwoRotavirus3DoseVaccinations",
+    "rightOperand" : "Rotavirus3DoseVaccinationFollowedbyARotavirus2DoseVaccinationandARotavirus3DoseVaccination",
+    "operator" : "Union",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "Rotavirus2or3DoseVaccinations|68de3d7c-11fb-4728-ad78-3787134fb266",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Rotavirus2or3DoseVaccinations|395bdae7-292a-4830-881d-cb0cbce607a3",
+    "rightOperand" : "Rotavirus3DoseVaccinationsFollowedbyOneRotavirus2DoseVaccination",
+    "operator" : "Union",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

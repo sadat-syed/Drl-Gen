@@ -1,0 +1,10 @@
+{
+  "name" : "InfluenzaNumeratorInclusionConditions",
+  "resolved" : false,
+  "dependentObjects" : [ "InfluenzaConditions" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

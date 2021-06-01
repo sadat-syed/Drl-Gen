@@ -1,0 +1,10 @@
+{
+  "name" : "Four DTaP Vaccinations",
+  "resolved" : false,
+  "dependentObjects" : [ "DTaPVaccination1" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

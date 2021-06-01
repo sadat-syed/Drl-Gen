@@ -1,0 +1,40 @@
+{
+  "name" : "UnilateralMastectomyProcedure",
+  "resolved" : false,
+  "dependentObjects" : [ "UnilateralMastectomyProcedure" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "queryVariable" : [ {
+    "name" : "UnilateralMastectomyProcedure",
+    "resolved" : false,
+    "dependentObjects" : [ "UnilateralMastectomy" ],
+    "valueSet" : null,
+    "dataType" : null,
+    "queryVariable" : [ {
+      "name" : "UnilateralMastectomy",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "valueSet" : "2.16.840.1.113883.3.464.1003.198.12.1020",
+      "dataType" : "PROCEDURE_PERFORMED",
+      "queryVariable" : [ ],
+      "constraintList" : [ ],
+      "dataSet" : null,
+      "conditionNumber" : 0
+    } ],
+    "constraintList" : [ {
+      "name" : "UnilateralMastectomyProcedure|5307d33b-95f4-46b9-ab2a-8c117731d044",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : "Before(UnilateralMastectomyProcedure.stopDate, MP.stopDate)",
+      "rightOperand" : null,
+      "operator" : "Before",
+      "dependentQueryVariable" : null,
+      "fromClause" : false
+    } ],
+    "dataSet" : null,
+    "conditionNumber" : 0
+  } ],
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

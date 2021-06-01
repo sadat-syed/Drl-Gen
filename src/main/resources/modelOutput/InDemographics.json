@@ -1,0 +1,55 @@
+{
+  "name" : "InDemographics",
+  "resolved" : false,
+  "dependentObjects" : [ "Female", "Female" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ {
+    "name" : "InDemographics|dfe67cb1-9edf-4e76-869b-d3ef651802fa",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "calculateAgeAt(period)",
+    "rightOperand" : "51",
+    "operator" : "GreaterOrEqual",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  }, {
+    "name" : "InDemographics|2616e13d-7c76-4e82-b430-57778130c2d7",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "calculateAgeAt(period)",
+    "rightOperand" : "74",
+    "operator" : "Less",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  }, {
+    "name" : "InDemographics|75f9e43a-3323-4d28-831e-73f135575e32",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "InDemographics|dfe67cb1-9edf-4e76-869b-d3ef651802fa",
+    "rightOperand" : "InDemographics|2616e13d-7c76-4e82-b430-57778130c2d7",
+    "operator" : "And",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  }, {
+    "name" : "InDemographics|64ebf26f-80e1-467f-b7f4-c1dbb7f304d7",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Female",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "InDemographics|97058d83-2ab1-4934-a4d9-21dc34113b10",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "InDemographics|75f9e43a-3323-4d28-831e-73f135575e32",
+    "rightOperand" : "InDemographics|64ebf26f-80e1-467f-b7f4-c1dbb7f304d7",
+    "operator" : "And",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

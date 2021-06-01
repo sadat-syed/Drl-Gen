@@ -1,0 +1,10 @@
+{
+  "name" : "HepatitisBImmunizationsorProcedures",
+  "resolved" : false,
+  "dependentObjects" : [ "HepatitisBVaccination" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

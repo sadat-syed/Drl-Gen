@@ -1,0 +1,10 @@
+{
+  "name" : "SDEEthnicity",
+  "resolved" : false,
+  "dependentObjects" : [ "Ethnicity" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

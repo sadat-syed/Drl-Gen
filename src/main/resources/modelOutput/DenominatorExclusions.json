@@ -1,0 +1,19 @@
+{
+  "name" : "DenominatorExclusions",
+  "resolved" : false,
+  "dependentObjects" : [ "HasHospice" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ {
+    "name" : "DenominatorExclusions|2f56e0d1-05e7-44b5-8708-361ee5393cc1",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "HasHospice",
+    "rightOperand" : null,
+    "operator" : "expressionRef",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

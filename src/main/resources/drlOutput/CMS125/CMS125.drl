@@ -1,0 +1,44 @@
+package com.ct.haf.mu.engine.measure;
+
+import java.util.List;
+import org.slf4j.Logger;
+import com.ct.haf.mu.entity.measureresult.ProportionResult;
+import com.ct.haf.mu.entity.measureresult.ConditionAudit;
+import com.ct.haf.mu.entity.measureresult.QdmElementReference;
+import com.ct.haf.mu.entity.measureresult.ResultState;
+import com.ct.haf.mu.entity.patientdata.QdmElement;
+import com.ct.haf.mu.entity.patientdata.QdmElementAttribute;
+import com.ct.haf.mu.entity.patientdata.QdmDataType;
+import com.ct.haf.mu.entity.patientdata.QdmPeriod;
+import com.ct.haf.mu.engine.measure.util.QdmFunction;
+import com.ct.haf.mu.engine.measure.util.QdmList;
+import com.ct.haf.mu.entity.patientdata.attributetype.QdmCD;
+import com.ct.haf.mu.service.api.ValueSetLookupService;
+import com.ct.haf.mu.entity.patientdata.QdmAttributeName;
+
+
+// Use logging system 
+global Logger logger;
+
+// Lookup service for valuesets
+global ValueSetLookupService lookupService;
+
+
+//===========================================================================================================
+// Initialization
+//===========================================================================================================
+
+// Initialize the settings for each population critieria
+rule "Initialize Measure CMS125v6 Results"
+ruleflow-group "Initialize"
+	when
+		$result : ProportionResult(initialPatientPopulation == ResultState.NOT_DEFINED)
+	then
+		logger.info ("Setting up the ProportionResult Result: " + $result.getMeasureId());
+		modify ($result) {
+			setInitialPatientPopulation(ResultState.NOT_EVALUATED),
+			setDenominator(ResultState.NOT_EVALUATED),
+			setDenominatorExclusions(ResultState.NOT_EVALUATED),
+			setNumerator(ResultState.NOT_EVALUATED)
+		}
+end

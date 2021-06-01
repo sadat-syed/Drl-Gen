@@ -1,0 +1,20 @@
+{
+  "name" : "HospitalizationLengthofStay",
+  "resolved" : false,
+  "dependentObjects" : [ "LengthInDays" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "queryVariable" : [ ],
+  "constraintList" : [ {
+    "name" : "HospitalizationLengthofStay|f231bb3e-8896-4328-b134-3aadd4e340a4",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "LengthInDays",
+    "rightOperand" : null,
+    "operator" : "expressionRef",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

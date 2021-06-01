@@ -1,0 +1,10 @@
+{
+  "name" : "ValidEncounters",
+  "resolved" : false,
+  "dependentObjects" : [ "Encounter" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

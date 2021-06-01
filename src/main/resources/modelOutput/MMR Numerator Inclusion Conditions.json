@@ -1,0 +1,10 @@
+{
+  "name" : "MMR Numerator Inclusion Conditions",
+  "resolved" : false,
+  "dependentObjects" : [ "MMRConditions" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

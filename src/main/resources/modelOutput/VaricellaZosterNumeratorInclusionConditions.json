@@ -1,0 +1,10 @@
+{
+  "name" : "VaricellaZosterNumeratorInclusionConditions",
+  "resolved" : false,
+  "dependentObjects" : [ "VaricellaZosterConditions" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

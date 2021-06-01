@@ -1,0 +1,40 @@
+{
+  "name" : "BilateralMastectomyProcedure",
+  "resolved" : false,
+  "dependentObjects" : [ "BilateralMastectomyPerformed" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "queryVariable" : [ {
+    "name" : "BilateralMastectomyPerformed",
+    "resolved" : false,
+    "dependentObjects" : [ "BilateralMastectomy" ],
+    "valueSet" : null,
+    "dataType" : null,
+    "queryVariable" : [ {
+      "name" : "BilateralMastectomy",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "valueSet" : "2.16.840.1.113883.3.464.1003.198.12.1005",
+      "dataType" : "PROCEDURE_PERFORMED",
+      "queryVariable" : [ ],
+      "constraintList" : [ ],
+      "dataSet" : null,
+      "conditionNumber" : 0
+    } ],
+    "constraintList" : [ {
+      "name" : "BilateralMastectomyPerformed|088a940e-c8a7-4ff4-9743-74ef2fde75be",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : "Before(BilateralMastectomyPerformed.stopDate, MP.stopDate)",
+      "rightOperand" : null,
+      "operator" : "Before",
+      "dependentQueryVariable" : null,
+      "fromClause" : false
+    } ],
+    "dataSet" : null,
+    "conditionNumber" : 0
+  } ],
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

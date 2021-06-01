@@ -1,0 +1,10 @@
+{
+  "name" : "OneChickenPoxVaccination",
+  "resolved" : false,
+  "dependentObjects" : [ "ChickenPoxVaccination" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

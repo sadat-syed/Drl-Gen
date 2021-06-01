@@ -1,0 +1,10 @@
+{
+  "name" : "DTaPImmunizationsorProcedures",
+  "resolved" : false,
+  "dependentObjects" : [ "DTaPVaccination" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

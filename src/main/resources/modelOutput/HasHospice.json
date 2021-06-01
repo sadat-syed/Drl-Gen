@@ -1,0 +1,161 @@
+{
+  "name" : "HasHospice",
+  "resolved" : false,
+  "dependentObjects" : [ "DischargeHospice", "DischargeHospice", "HospiceOrder", "HospiceOrder", "HospicePerformed", "HospicePerformed" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "queryVariable" : [ {
+    "name" : "DischargeHospice",
+    "resolved" : false,
+    "dependentObjects" : [ "EncounterInpatient" ],
+    "valueSet" : null,
+    "dataType" : null,
+    "queryVariable" : [ {
+      "name" : "EncounterInpatient",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "valueSet" : "2.16.840.1.113883.3.666.5.307",
+      "dataType" : "ENCOUNTER_PERFORMED",
+      "queryVariable" : [ ],
+      "constraintList" : [ ],
+      "dataSet" : null,
+      "conditionNumber" : 0
+    } ],
+    "constraintList" : [ {
+      "name" : "DischargeHospice|4a755934-f6b8-432b-b4a3-0c36a8a555b1",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : null,
+      "rightOperand" : null,
+      "operator" : "Or",
+      "dependentQueryVariable" : null,
+      "fromClause" : false
+    }, {
+      "name" : "DischargeHospice|7704cda9-c361-452f-b393-39d5c96d6f50",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : "In(null, MP.period)",
+      "rightOperand" : null,
+      "operator" : "In",
+      "dependentQueryVariable" : null,
+      "fromClause" : false
+    }, {
+      "name" : "DischargeHospice|a7a100b9-2b5f-4064-ab2e-1c6809a4a0b5",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : "DischargeHospice|4a755934-f6b8-432b-b4a3-0c36a8a555b1",
+      "rightOperand" : "DischargeHospice|7704cda9-c361-452f-b393-39d5c96d6f50",
+      "operator" : "And",
+      "dependentQueryVariable" : null,
+      "fromClause" : false
+    } ],
+    "dataSet" : null,
+    "conditionNumber" : 0
+  }, {
+    "name" : "HospiceOrder",
+    "resolved" : false,
+    "dependentObjects" : [ "Hospicecareambulatory" ],
+    "valueSet" : null,
+    "dataType" : null,
+    "queryVariable" : [ {
+      "name" : "Hospicecareambulatory",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "valueSet" : "2.16.840.1.113762.1.4.1108.15",
+      "dataType" : "INTERVENTION_PERFORMED",
+      "queryVariable" : [ ],
+      "constraintList" : [ ],
+      "dataSet" : null,
+      "conditionNumber" : 0
+    } ],
+    "constraintList" : [ {
+      "name" : "HospiceOrder|499e1495-3473-4d20-be7c-8422099d39a5",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : "In(HospiceOrder.period, MP.period)",
+      "rightOperand" : null,
+      "operator" : "In",
+      "dependentQueryVariable" : null,
+      "fromClause" : false
+    } ],
+    "dataSet" : null,
+    "conditionNumber" : 0
+  }, {
+    "name" : "HospicePerformed",
+    "resolved" : false,
+    "dependentObjects" : [ "Hospicecareambulatory" ],
+    "valueSet" : null,
+    "dataType" : null,
+    "queryVariable" : [ {
+      "name" : "Hospicecareambulatory",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "valueSet" : "2.16.840.1.113762.1.4.1108.15",
+      "dataType" : "INTERVENTION_PERFORMED",
+      "queryVariable" : [ ],
+      "constraintList" : [ ],
+      "dataSet" : null,
+      "conditionNumber" : 0
+    } ],
+    "constraintList" : [ {
+      "name" : "HospicePerformed|581d9a5b-f648-4729-9571-1de62127af6f",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : "Overlaps(HospicePerformed.period)",
+      "rightOperand" : null,
+      "operator" : "Overlaps",
+      "dependentQueryVariable" : null,
+      "fromClause" : false
+    } ],
+    "dataSet" : null,
+    "conditionNumber" : 0
+  } ],
+  "constraintList" : [ {
+    "name" : "HasHospice|bab1063e-01c4-4dfd-ba1a-a96ec2e2d75d",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "DischargeHospice",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "HasHospice|5c6c0d53-bcdb-41b8-b77a-6c402f89ee83",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "HospiceOrder",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "HasHospice|45eec156-0188-4280-9bb9-09540f69b473",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "HasHospice|bab1063e-01c4-4dfd-ba1a-a96ec2e2d75d",
+    "rightOperand" : "HasHospice|5c6c0d53-bcdb-41b8-b77a-6c402f89ee83",
+    "operator" : "Or",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  }, {
+    "name" : "HasHospice|189a5aae-4523-43de-88fa-6218b3f72216",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "HospicePerformed",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "HasHospice|345a38ce-9019-459c-9c75-f7530608dbea",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "HasHospice|45eec156-0188-4280-9bb9-09540f69b473",
+    "rightOperand" : "HasHospice|189a5aae-4523-43de-88fa-6218b3f72216",
+    "operator" : "Or",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

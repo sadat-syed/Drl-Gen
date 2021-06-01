@@ -1,0 +1,10 @@
+{
+  "name" : "Rotavirus 2 Dose Immunizations or Procedures",
+  "resolved" : false,
+  "dependentObjects" : [ "TwoDoseRotavirus" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

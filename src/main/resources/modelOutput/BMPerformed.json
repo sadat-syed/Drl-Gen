@@ -1,0 +1,10 @@
+{
+  "name" : "BMPerformed",
+  "resolved" : false,
+  "dependentObjects" : [ "BM" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

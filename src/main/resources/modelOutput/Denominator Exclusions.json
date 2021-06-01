@@ -1,0 +1,104 @@
+{
+  "name" : "Denominator Exclusions",
+  "resolved" : false,
+  "dependentObjects" : [ "Unilateral Mastectomy Procedure", "Has Hospice", "Right Mastectomy", "Left Mastectomy", "History Bilateral Mastectomy", "Bilateral Mastectomy Procedure" ],
+  "valueSetList" : null,
+  "dataType" : null,
+  "constraintList" : [ {
+    "name" : "Denominator Exclusions|b25b378f-3e57-4fe0-b74c-86e212d23d35",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Unilateral Mastectomy Procedure",
+    "rightOperand" : "Count(Unilateral Mastectomy Procedure),2",
+    "operator" : "Equal",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "Denominator Exclusions|52214a3d-07d7-4a5e-9c1d-2dc30c9781b3",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Has Hospice",
+    "rightOperand" : "Denominator Exclusions|b25b378f-3e57-4fe0-b74c-86e212d23d35",
+    "operator" : "Or",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "Denominator Exclusions|85ac0362-8104-45d7-8427-58ec0d1593b4",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Right Mastectomy",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "Denominator Exclusions|defeaa8d-3fbe-408a-8a7e-e6cffe8439d4",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Left Mastectomy",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "Denominator Exclusions|1d413226-af66-482f-8eb5-9f3e2512888a",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Denominator Exclusions|85ac0362-8104-45d7-8427-58ec0d1593b4",
+    "rightOperand" : "Denominator Exclusions|defeaa8d-3fbe-408a-8a7e-e6cffe8439d4",
+    "operator" : "And",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  }, {
+    "name" : "Denominator Exclusions|5ee7ef23-0a7c-4af8-a532-b9afd44f6d59",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Denominator Exclusions|52214a3d-07d7-4a5e-9c1d-2dc30c9781b3",
+    "rightOperand" : "Denominator Exclusions|1d413226-af66-482f-8eb5-9f3e2512888a",
+    "operator" : "Or",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  }, {
+    "name" : "Denominator Exclusions|c30c2456-488e-472a-acdf-8e88308e8612",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "History Bilateral Mastectomy",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "Denominator Exclusions|8a64bdf9-f9bb-4615-91f4-c223925bd1f2",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Denominator Exclusions|5ee7ef23-0a7c-4af8-a532-b9afd44f6d59",
+    "rightOperand" : "Denominator Exclusions|c30c2456-488e-472a-acdf-8e88308e8612",
+    "operator" : "Or",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  }, {
+    "name" : "Denominator Exclusions|e94e21e8-e752-4529-8382-480686df2bab",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Bilateral Mastectomy Procedure",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "Denominator Exclusions|8cd7fa5d-af39-433a-971a-fc788437f3cd",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Denominator Exclusions|8a64bdf9-f9bb-4615-91f4-c223925bd1f2",
+    "rightOperand" : "Denominator Exclusions|e94e21e8-e752-4529-8382-480686df2bab",
+    "operator" : "Or",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0,
+  "operator" : null,
+  "intervalOperator" : null,
+  "qdmPeriodVariable" : null,
+  "qdmFunctionVariable" : ""
+}

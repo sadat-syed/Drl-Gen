@@ -1,0 +1,78 @@
+{
+  "name" : "RightMastectomy",
+  "resolved" : false,
+  "dependentObjects" : [ "RightMastectomy" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "queryVariable" : [ {
+    "name" : "RightMastectomy",
+    "resolved" : false,
+    "dependentObjects" : [ "StatusPostRightMastectomy", "StatusPostRightMastectomy", "UnilateralMastectomyDiagnosis", "UnilateralMastectomyDiagnosis" ],
+    "valueSet" : null,
+    "dataType" : null,
+    "queryVariable" : [ {
+      "name" : "StatusPostRightMastectomy",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "valueSet" : "2.16.840.1.113883.3.464.1003.198.12.1070",
+      "dataType" : "DIAGNOSIS",
+      "queryVariable" : [ ],
+      "constraintList" : [ ],
+      "dataSet" : null,
+      "conditionNumber" : 0
+    }, {
+      "name" : "UnilateralMastectomyDiagnosis",
+      "resolved" : false,
+      "dependentObjects" : [ "UnilateralMastectomy_UnspecifiedLaterality" ],
+      "valueSet" : null,
+      "dataType" : null,
+      "queryVariable" : [ {
+        "name" : "UnilateralMastectomy_UnspecifiedLaterality",
+        "resolved" : false,
+        "dependentObjects" : [ ],
+        "valueSet" : "2.16.840.1.113883.3.464.1003.198.12.1071",
+        "dataType" : "DIAGNOSIS",
+        "queryVariable" : [ ],
+        "constraintList" : [ ],
+        "dataSet" : null,
+        "conditionNumber" : 0
+      } ],
+      "constraintList" : [ {
+        "name" : "UnilateralMastectomyDiagnosis|f6e0312f-c520-4010-ae53-167dc77e85a4",
+        "resolved" : false,
+        "dependentObjects" : [ ],
+        "leftOperand" : "Valuset(2.16.840.1.113883.3.464.1003.122.12.1035)",
+        "rightOperand" : null,
+        "operator" : "InValueSet",
+        "dependentQueryVariable" : null,
+        "fromClause" : false
+      } ],
+      "dataSet" : null,
+      "conditionNumber" : 0
+    } ],
+    "constraintList" : [ {
+      "name" : "RightMastectomy|dd1718d3-a6e8-48c9-9434-9991c138e399",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : "StatusPostRightMastectomy",
+      "rightOperand" : "UnilateralMastectomyDiagnosis",
+      "operator" : "Union",
+      "dependentQueryVariable" : null,
+      "fromClause" : true
+    }, {
+      "name" : "RightMastectomy|4999385c-1be5-4984-9971-46df863b0381",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : "Before(RightMastectomy.startDate, MP.stopDate)",
+      "rightOperand" : null,
+      "operator" : "Before",
+      "dependentQueryVariable" : null,
+      "fromClause" : false
+    } ],
+    "dataSet" : null,
+    "conditionNumber" : 0
+  } ],
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

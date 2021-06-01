@@ -1,0 +1,10 @@
+{
+  "name" : "SDERace",
+  "resolved" : false,
+  "dependentObjects" : [ "Race" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

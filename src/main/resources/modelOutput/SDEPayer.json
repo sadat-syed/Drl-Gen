@@ -1,0 +1,10 @@
+{
+  "name" : "SDEPayer",
+  "resolved" : false,
+  "dependentObjects" : [ "Payer" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

@@ -1,0 +1,41 @@
+{
+  "name" : "Initial Population",
+  "resolved" : false,
+  "dependentObjects" : [ "Female", "BirthDate" ],
+  "valueSetList" : null,
+  "dataType" : null,
+  "constraintList" : [ {
+    "name" : "Initial Population|d413194a-de9f-49fc-a040-9310f4e69fbe",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Female",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "Initial Population|f5b4823d-dd5b-48c6-8408-ffc829484039",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "BirthDate",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "Initial Population|dc1c09fc-a396-452c-b12e-0a9ea0063642",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Initial Population|d413194a-de9f-49fc-a040-9310f4e69fbe",
+    "rightOperand" : "Initial Population|f5b4823d-dd5b-48c6-8408-ffc829484039",
+    "operator" : "And",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0,
+  "operator" : null,
+  "intervalOperator" : null,
+  "qdmPeriodVariable" : null,
+  "qdmFunctionVariable" : ""
+}

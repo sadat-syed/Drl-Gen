@@ -1,0 +1,10 @@
+{
+  "name" : "PolioNumeratorInclusionConditions",
+  "resolved" : false,
+  "dependentObjects" : [ "PolioConditions" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

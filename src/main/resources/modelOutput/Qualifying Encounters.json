@@ -1,0 +1,11 @@
+{
+  "name" : "Qualifying Encounters",
+  "resolved" : false,
+  "dependentObjects" : [ "Encounter" ],
+  "valueSetList" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0,
+  "qdmElementAttributeList" : null
+}

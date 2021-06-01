@@ -1,0 +1,11 @@
+{
+  "name" : "Negative Retinal Exam in Prior 1 Year",
+  "resolved" : false,
+  "dependentObjects" : [ "NegativeRetinalExam" ],
+  "valueSetList" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0,
+  "qdmElementAttributeList" : null
+}

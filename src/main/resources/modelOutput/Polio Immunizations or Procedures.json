@@ -1,0 +1,10 @@
+{
+  "name" : "Polio Immunizations or Procedures",
+  "resolved" : false,
+  "dependentObjects" : [ "PolioVaccination" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

@@ -1,0 +1,10 @@
+{
+  "name" : "Influenza Immunizations or Procedures",
+  "resolved" : false,
+  "dependentObjects" : [ "InfluenzaVaccination" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

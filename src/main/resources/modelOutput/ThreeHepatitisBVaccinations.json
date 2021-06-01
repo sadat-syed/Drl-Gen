@@ -1,0 +1,10 @@
+{
+  "name" : "ThreeHepatitisBVaccinations",
+  "resolved" : false,
+  "dependentObjects" : [ "HepatitisBVaccination1" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

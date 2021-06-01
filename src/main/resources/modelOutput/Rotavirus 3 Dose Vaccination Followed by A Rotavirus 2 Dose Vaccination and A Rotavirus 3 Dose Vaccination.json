@@ -1,0 +1,10 @@
+{
+  "name" : "Rotavirus 3 Dose Vaccination Followed by A Rotavirus 2 Dose Vaccination and A Rotavirus 3 Dose Vaccination",
+  "resolved" : false,
+  "dependentObjects" : [ "Rotavirus323Vaccination1" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

@@ -1,0 +1,10 @@
+{
+  "name" : "Hib Immunizations or Procedures",
+  "resolved" : false,
+  "dependentObjects" : [ "HibVaccination" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

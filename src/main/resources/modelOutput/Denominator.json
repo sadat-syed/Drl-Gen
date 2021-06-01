@@ -1,0 +1,23 @@
+{
+  "name" : "Denominator",
+  "resolved" : false,
+  "dependentObjects" : [ "Initial Population" ],
+  "valueSetList" : null,
+  "dataType" : null,
+  "constraintList" : [ {
+    "name" : "Denominator|b54b07b2-f291-4b4f-8994-9bfa1095b6d9",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Initial Population",
+    "rightOperand" : null,
+    "operator" : "expressionRef",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0,
+  "operator" : null,
+  "intervalOperator" : null,
+  "qdmPeriodVariable" : null,
+  "qdmFunctionVariable" : null
+}

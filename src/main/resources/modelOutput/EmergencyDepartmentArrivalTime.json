@@ -1,0 +1,11 @@
+{
+  "name" : "EmergencyDepartmentArrivalTime",
+  "resolved" : false,
+  "dependentObjects" : [ ],
+  "valueSet" : null,
+  "dataType" : null,
+  "queryVariable" : [ ],
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

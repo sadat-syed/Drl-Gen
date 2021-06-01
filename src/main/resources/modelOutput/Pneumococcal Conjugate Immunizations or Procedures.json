@@ -1,0 +1,10 @@
+{
+  "name" : "Pneumococcal Conjugate Immunizations or Procedures",
+  "resolved" : false,
+  "dependentObjects" : [ "PneumococcalVaccination" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

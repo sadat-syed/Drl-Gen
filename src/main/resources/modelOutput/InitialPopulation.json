@@ -1,0 +1,37 @@
+{
+  "name" : "InitialPopulation",
+  "resolved" : false,
+  "dependentObjects" : [ "Birthdate", "Birthdate", "QualifyingEncounter" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ {
+    "name" : "InitialPopulation|fb7dfa22-c053-439c-befd-7e15dd8e11a9",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Birthdate",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "InitialPopulation|96ffbb24-b316-47f7-a93e-4cb06483f600",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "QualifyingEncounter",
+    "rightOperand" : null,
+    "operator" : "Exists",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "InitialPopulation|a3960c0c-b96d-43b6-acfc-d1389e126ca5",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "InitialPopulation|fb7dfa22-c053-439c-befd-7e15dd8e11a9",
+    "rightOperand" : "InitialPopulation|96ffbb24-b316-47f7-a93e-4cb06483f600",
+    "operator" : "And",
+    "dependentQueryVariable" : null,
+    "fromClause" : false
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

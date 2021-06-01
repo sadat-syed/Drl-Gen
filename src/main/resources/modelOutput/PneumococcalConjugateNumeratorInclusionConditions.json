@@ -1,0 +1,10 @@
+{
+  "name" : "PneumococcalConjugateNumeratorInclusionConditions",
+  "resolved" : false,
+  "dependentObjects" : [ "PneumococcalReaction" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

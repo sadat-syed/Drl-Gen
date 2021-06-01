@@ -1,0 +1,10 @@
+{
+  "name" : "LeftMast",
+  "resolved" : false,
+  "dependentObjects" : [ "LeftMastectomy" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

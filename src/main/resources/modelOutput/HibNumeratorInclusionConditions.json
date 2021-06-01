@@ -1,0 +1,10 @@
+{
+  "name" : "HibNumeratorInclusionConditions",
+  "resolved" : false,
+  "dependentObjects" : [ "HibReaction" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

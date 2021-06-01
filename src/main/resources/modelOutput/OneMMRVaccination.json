@@ -1,0 +1,10 @@
+{
+  "name" : "OneMMRVaccination",
+  "resolved" : false,
+  "dependentObjects" : [ "MMRVaccination" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

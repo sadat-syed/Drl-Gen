@@ -1,0 +1,10 @@
+{
+  "name" : "Two Influenza Vaccinations",
+  "resolved" : false,
+  "dependentObjects" : [ "FluVaccination1" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

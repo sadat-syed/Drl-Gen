@@ -1,0 +1,21 @@
+{
+  "name" : "HospitalizationLocations",
+  "resolved" : false,
+  "dependentObjects" : [ "EDEncounter" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "queryVariable" : [ {
+    "name" : "EDEncounter",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "valueSet" : null,
+    "dataType" : null,
+    "queryVariable" : [ ],
+    "constraintList" : [ ],
+    "dataSet" : null,
+    "conditionNumber" : 0
+  } ],
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

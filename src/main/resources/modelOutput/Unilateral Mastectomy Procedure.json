@@ -1,0 +1,14 @@
+{
+  "name" : "Unilateral Mastectomy Procedure",
+  "resolved" : false,
+  "dependentObjects" : [ "UnilateralMastectomyProcedure" ],
+  "valueSetList" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0,
+  "operator" : null,
+  "intervalOperator" : null,
+  "qdmPeriodVariable" : null,
+  "qdmFunctionVariable" : "endsBeforeEnd"
+}

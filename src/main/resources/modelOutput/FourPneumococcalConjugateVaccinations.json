@@ -1,0 +1,10 @@
+{
+  "name" : "FourPneumococcalConjugateVaccinations",
+  "resolved" : false,
+  "dependentObjects" : [ "PneumococcalVaccination1" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

@@ -1,0 +1,28 @@
+{
+  "name" : "Rotavirus 2 or 3 Dose Vaccinations",
+  "resolved" : false,
+  "dependentObjects" : [ "Rotavirus 2 Dose Vaccination Followed by Two Rotavirus 3 Dose Vaccinations", "Rotavirus 3 Dose Vaccination Followed by A Rotavirus 2 Dose Vaccination and A Rotavirus 3 Dose Vaccination", "Rotavirus 3 Dose Vaccinations Followed by One Rotavirus 2 Dose Vaccination" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ {
+    "name" : "Rotavirus 2 or 3 Dose Vaccinations|5c8ed08c-ec64-44eb-be44-3781856156f6",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Rotavirus 2 Dose Vaccination Followed by Two Rotavirus 3 Dose Vaccinations",
+    "rightOperand" : "Rotavirus 3 Dose Vaccination Followed by A Rotavirus 2 Dose Vaccination and A Rotavirus 3 Dose Vaccination",
+    "operator" : "Union",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  }, {
+    "name" : "Rotavirus 2 or 3 Dose Vaccinations|d2d08a0d-7792-4ddb-b9d0-bdb05bf066d2",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "Rotavirus 2 or 3 Dose Vaccinations|5c8ed08c-ec64-44eb-be44-3781856156f6",
+    "rightOperand" : "Rotavirus 3 Dose Vaccinations Followed by One Rotavirus 2 Dose Vaccination",
+    "operator" : "Union",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

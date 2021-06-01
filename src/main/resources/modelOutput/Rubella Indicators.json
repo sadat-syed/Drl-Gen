@@ -1,0 +1,10 @@
+{
+  "name" : "Rubella Indicators",
+  "resolved" : false,
+  "dependentObjects" : [ "Rubella" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

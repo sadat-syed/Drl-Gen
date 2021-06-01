@@ -1,0 +1,11 @@
+{
+  "name" : "Retinal Exam in Measurement Period",
+  "resolved" : false,
+  "dependentObjects" : [ "RetinalExam" ],
+  "valueSetList" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0,
+  "qdmElementAttributeList" : null
+}

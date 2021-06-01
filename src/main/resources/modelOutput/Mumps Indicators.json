@@ -1,0 +1,10 @@
+{
+  "name" : "Mumps Indicators",
+  "resolved" : false,
+  "dependentObjects" : [ "Mumps" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

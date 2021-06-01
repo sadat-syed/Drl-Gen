@@ -1,0 +1,20 @@
+{
+  "name" : "CalendarAgeInDays",
+  "resolved" : false,
+  "dependentObjects" : [ "CalendarAgeInDaysAt" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "queryVariable" : [ ],
+  "constraintList" : [ {
+    "name" : "CalendarAgeInDays|c16c99a5-4440-4578-afea-6f3a190e0460",
+    "resolved" : false,
+    "dependentObjects" : [ ],
+    "leftOperand" : "CalendarAgeInDaysAt",
+    "rightOperand" : null,
+    "operator" : "expressionRef",
+    "dependentQueryVariable" : null,
+    "fromClause" : true
+  } ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

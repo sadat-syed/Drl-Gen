@@ -1,0 +1,10 @@
+{
+  "name" : "Rotavirus Numerator Inclusion Conditions",
+  "resolved" : false,
+  "dependentObjects" : [ "RotavirusConditions" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

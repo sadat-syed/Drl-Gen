@@ -1,0 +1,14 @@
+{
+  "name" : "Left Mastectomy",
+  "resolved" : false,
+  "dependentObjects" : [ "LeftMastectomy" ],
+  "valueSetList" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0,
+  "operator" : null,
+  "intervalOperator" : null,
+  "qdmPeriodVariable" : null,
+  "qdmFunctionVariable" : "startsBeforeEnd"
+}

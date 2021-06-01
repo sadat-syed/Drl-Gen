@@ -1,0 +1,97 @@
+{
+  "name" : "LeftMastectomy",
+  "resolved" : false,
+  "dependentObjects" : [ "LeftMastectomy" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "queryVariable" : [ {
+    "name" : "LeftMastectomy",
+    "resolved" : false,
+    "dependentObjects" : [ "StatusPostLeftMastectomy", "StatusPostLeftMastectomy", "UnilateralMastectomyDiagnosis", "UnilateralMastectomyDiagnosis" ],
+    "valueSet" : null,
+    "dataType" : null,
+    "queryVariable" : [ {
+      "name" : "StatusPostLeftMastectomy",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "valueSet" : "2.16.840.1.113883.3.464.1003.198.12.1069",
+      "dataType" : "DIAGNOSIS",
+      "queryVariable" : [ ],
+      "constraintList" : [ ],
+      "dataSet" : null,
+      "conditionNumber" : 0
+    }, {
+      "name" : "UnilateralMastectomyDiagnosis",
+      "resolved" : false,
+      "dependentObjects" : [ "UnilateralMastectomy_UnspecifiedLaterality", "UnilateralMastectomy_UnspecifiedLaterality" ],
+      "valueSet" : null,
+      "dataType" : null,
+      "queryVariable" : [ {
+        "name" : "UnilateralMastectomy_UnspecifiedLaterality",
+        "resolved" : false,
+        "dependentObjects" : [ ],
+        "valueSet" : "2.16.840.1.113883.3.464.1003.198.12.1071",
+        "dataType" : "DIAGNOSIS",
+        "queryVariable" : [ ],
+        "constraintList" : [ ],
+        "dataSet" : null,
+        "conditionNumber" : 0
+      }, {
+        "name" : "UnilateralMastectomy_UnspecifiedLaterality",
+        "resolved" : false,
+        "dependentObjects" : [ ],
+        "valueSet" : "2.16.840.1.113883.3.464.1003.198.12.1071",
+        "dataType" : "DIAGNOSIS",
+        "queryVariable" : [ ],
+        "constraintList" : [ ],
+        "dataSet" : null,
+        "conditionNumber" : 0
+      } ],
+      "constraintList" : [ {
+        "name" : "UnilateralMastectomyDiagnosis|f6e0312f-c520-4010-ae53-167dc77e85a4",
+        "resolved" : false,
+        "dependentObjects" : [ ],
+        "leftOperand" : "Valuset(2.16.840.1.113883.3.464.1003.122.12.1035)",
+        "rightOperand" : null,
+        "operator" : "InValueSet",
+        "dependentQueryVariable" : null,
+        "fromClause" : false
+      }, {
+        "name" : "UnilateralMastectomyDiagnosis|5fb3af11-0c0f-4d16-940b-ae9c920c694e",
+        "resolved" : false,
+        "dependentObjects" : [ ],
+        "leftOperand" : "Valuset(2.16.840.1.113883.3.464.1003.122.12.1036)",
+        "rightOperand" : null,
+        "operator" : "InValueSet",
+        "dependentQueryVariable" : null,
+        "fromClause" : false
+      } ],
+      "dataSet" : null,
+      "conditionNumber" : 0
+    } ],
+    "constraintList" : [ {
+      "name" : "LeftMastectomy|76cddf68-f19d-4c6b-90ee-bbf69a2538fc",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : "StatusPostLeftMastectomy",
+      "rightOperand" : "UnilateralMastectomyDiagnosis",
+      "operator" : "Union",
+      "dependentQueryVariable" : null,
+      "fromClause" : true
+    }, {
+      "name" : "LeftMastectomy|fde42ea7-3291-4b6a-aa98-99263b7ef781",
+      "resolved" : false,
+      "dependentObjects" : [ ],
+      "leftOperand" : "Before(LeftMastectomy.startDate, MP.stopDate)",
+      "rightOperand" : null,
+      "operator" : "Before",
+      "dependentQueryVariable" : null,
+      "fromClause" : false
+    } ],
+    "dataSet" : null,
+    "conditionNumber" : 0
+  } ],
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

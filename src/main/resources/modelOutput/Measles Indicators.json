@@ -1,0 +1,10 @@
+{
+  "name" : "Measles Indicators",
+  "resolved" : false,
+  "dependentObjects" : [ "Measles" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}

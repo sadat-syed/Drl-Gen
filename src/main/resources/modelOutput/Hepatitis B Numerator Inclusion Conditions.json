@@ -1,0 +1,10 @@
+{
+  "name" : "Hepatitis B Numerator Inclusion Conditions",
+  "resolved" : false,
+  "dependentObjects" : [ "HepBConditions" ],
+  "valueSet" : null,
+  "dataType" : null,
+  "constraintList" : [ ],
+  "dataSet" : null,
+  "conditionNumber" : 0
+}
